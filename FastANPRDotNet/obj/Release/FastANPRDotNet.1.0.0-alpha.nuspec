@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>FastANPRDotNet</id>
+    <version>1.0.0-alpha</version>
+    <authors>Costin Banu</authors>
+    <description>Dotnet wrapper for FastANPR</description>
+    <repository type="git" commit="9639647cd0a4dd9928f2234baa7c68b10684525c" />
+    <dependencies>
+      <group targetFramework="net9.0">
+        <dependency id="CSnakes.Runtime" version="1.2.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.OpenApi" version="9.0.9" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/FastANPRDotNet/bin/Release/net9.0/FastANPRDotNet.dll" target="lib/net9.0/FastANPRDotNet.dll" />
+  </files>
+</package>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>FastANPRDotNet</id>
+    <version>1.0.2-alpha</version>
+    <authors>Costin Banu</authors>
+    <description>Dotnet wrapper for FastANPR</description>
+    <repository type="git" commit="9639647cd0a4dd9928f2234baa7c68b10684525c" />
+    <dependencies>
+      <group targetFramework="net9.0">
+        <dependency id="CSnakes.Runtime" version="1.2.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.OpenApi" version="9.0.9" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/net9.0/best.pt" buildAction="Content" copyToOutput="true" />
+      <files include="any/net9.0/detection.py" buildAction="Content" copyToOutput="true" />
+      <files include="any/net9.0/fastanpr.py" buildAction="Content" copyToOutput="true" />
+      <files include="any/net9.0/numberplate.py" buildAction="Content" copyToOutput="true" />
+      <files include="any/net9.0/recognition.py" buildAction="Content" copyToOutput="true" />
+      <files include="any/net9.0/version.py" buildAction="Content" copyToOutput="true" />
+      <files include="any/net9.0/__init__.py" buildAction="Content" copyToOutput="true" />
+      <files include="any/net9.0/requirements.txt" buildAction="Content" copyToOutput="true" />
+      <files include="any/net9.0/lpr.py" buildAction="Content" copyToOutput="true" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/FastANPRDotNet/bin/Release/net9.0/FastANPRDotNet.dll" target="lib/net9.0/FastANPRDotNet.dll" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/fastanpr/best.pt" target="content/best.pt" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/fastanpr/best.pt" target="contentFiles/any/net9.0/best.pt" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/fastanpr/detection.py" target="content/detection.py" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/fastanpr/detection.py" target="contentFiles/any/net9.0/detection.py" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/fastanpr/fastanpr.py" target="content/fastanpr.py" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/fastanpr/fastanpr.py" target="contentFiles/any/net9.0/fastanpr.py" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/fastanpr/numberplate.py" target="content/numberplate.py" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/fastanpr/numberplate.py" target="contentFiles/any/net9.0/numberplate.py" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/fastanpr/recognition.py" target="content/recognition.py" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/fastanpr/recognition.py" target="contentFiles/any/net9.0/recognition.py" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/fastanpr/version.py" target="content/version.py" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/fastanpr/version.py" target="contentFiles/any/net9.0/version.py" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/fastanpr/__init__.py" target="content/__init__.py" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/fastanpr/__init__.py" target="contentFiles/any/net9.0/__init__.py" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/requirements.txt" target="content/requirements.txt" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/requirements.txt" target="contentFiles/any/net9.0/requirements.txt" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/FastANPRDotNet/lpr.py" target="content/lpr.py" />
+    <file src="/media/costin/Data/DEV/Source/Repos/fastanpr-dotnet/FastANPRDotNet/lpr.py" target="contentFiles/any/net9.0/lpr.py" />
+  </files>
+</package>

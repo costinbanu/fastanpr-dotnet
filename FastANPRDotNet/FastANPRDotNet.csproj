@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CSnakes.Runtime" Version="1.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="../fastanpr/**">
+      <Pack>true</Pack>
+      <Link>fastanpr/%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <PackagePath>contentFiles\any\any\fastanpr\%(RecursiveDir)%(Filename)%(Extension)</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+
+    <Content Include="../requirements.txt">
+      <Pack>true</Pack>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+
+    <Content Include="lpr.py">
+      <Pack>true</Pack>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+
+    <AdditionalFiles Include="lpr.py" SourceItemType="Python" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="build\FastANPRDotNet.targets" Pack="true" PackagePath="build\" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <PackageId>FastANPRDotNet</PackageId>
+    <PackageVersion>1.0.6-alpha</PackageVersion>
+    <Authors>Costin Banu</Authors>
+    <Description>Dotnet wrapper for FastANPR</Description>
+</PropertyGroup>
+
+
+</Project>

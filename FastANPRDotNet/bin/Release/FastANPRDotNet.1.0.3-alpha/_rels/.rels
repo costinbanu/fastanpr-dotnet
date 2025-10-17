@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Type="http://schemas.microsoft.com/packaging/2010/07/manifest" Target="/FastANPRDotNet.nuspec" Id="R2B1B9B416A2A2085" />
+  <Relationship Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="/package/services/metadata/core-properties/b669fdcd702348e88ca9da8e35c18a79.psmdcp" Id="R981ED47FA42F00C4" />
+</Relationships>
